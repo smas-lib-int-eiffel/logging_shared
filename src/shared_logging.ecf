@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system xmlns="http://www.eiffel.com/developers/xml/configuration-1-16-0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.eiffel.com/developers/xml/configuration-1-16-0 http://www.eiffel.com/developers/xml/configuration-1-16-0.xsd" name="shared_logging" uuid="A6A7CC70-805E-478C-A433-D1DD3797A2F6" library_target="shared_logging">
+	<target name="shared_logging">
+		<root all_classes="true"/>
+		<file_rule>
+			<exclude>/CVS$</exclude>
+			<exclude>/EIFGENs$</exclude>
+			<exclude>/\.git$</exclude>
+			<exclude>/\.svn$</exclude>
+		</file_rule>
+		<option warning="true">
+			<assertions precondition="true" postcondition="true" check="true" invariant="true" loop="true" supplier_precondition="true"/>
+		</option>
+		<setting name="console_application" value="true"/>
+		<capability>
+			<concurrency support="none"/>
+		</capability>
+		<library name="base" location="$ISE_LIBRARY/library/base/base.ecf"/>
+		<library name="base_process" location="$ISE_LIBRARY/library/process/base/base_process.ecf"/>
+		<library name="logging" location="$ISE_LIBRARY/library/runtime/logging/logging.ecf"/>
+		<cluster name="shared_logging" location="." recursive="true"/>
+	</target>
+</system>
