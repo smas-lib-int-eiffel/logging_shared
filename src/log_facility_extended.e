@@ -6,11 +6,12 @@ note
 
 class
 	LOG_FACILITY_EXTENDED
-	inherit
-		LOG_LOGGING_FACILITY
-			redefine
-				make
-			end
+
+inherit
+	LOG_LOGGING_FACILITY
+		redefine
+			make
+		end
 
 create
 	make
